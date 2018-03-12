@@ -1,0 +1,198 @@
+
+html, body {
+  height: 100%;
+}
+
+a {
+  color: rgb(50,50,50);
+}
+
+a:visited, a:link {
+  text-decoration: none;
+  color: rgb(50,50,50);
+}
+
+
+/* ========================================================================
+                                  HOME:
+=========================================================================== */
+
+#home {
+  height: 100%;
+  font-family: 'Indie Flower', cursive;
+}
+
+#background-paint {
+  height: 100%;
+  background-image: url("../images/background-home.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#box1, #box2, #box3, #box4 {
+  background-color: rgb(190,190,190);
+  animation-duration: 3s;
+}
+
+#box1 {
+  margin-top: 70px;
+  animation-delay: 0.3s;
+}
+
+#box2 {
+  margin-top: 60px;
+  animation-delay: 1.3s;
+}
+
+#box3 {
+  margin-top: 30px;
+  animation-delay: 2.3s;
+}
+
+#box4 {
+  margin-top: 120px;
+  animation-delay: 3.3s;
+}
+
+#box2:hover, #box3:hover, #box4:hover {
+  transform: scale(1.03);
+}
+
+a:hover #box2 {
+  color: rgb(198,130,51);
+}
+
+a:hover #box3 {
+  color: rgb(38,88,113);
+}
+
+a:hover #box4 {
+  color: rgb(160,30,30);
+}
+
+/* ========================================================================
+                                  ABOUT:
+=========================================================================== */
+
+#about {
+  height: 100%;
+}
+
+#background-bulbs {
+  height: 100%;
+  background-image: url("../images/background-bulbs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#about-box {
+  margin-top: 180px;
+  margin-bottom: 200px;
+  background-color: rgba(255, 255, 255, 0.92);
+  animation-duration: 2s;
+}
+
+#about-title {
+  font-family: 'Permanent Marker', cursive;
+}
+
+#about-description {
+  font-family: 'Rancho', cursive;
+}
+
+#about-list {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Arima Madurai', serif;
+}
+
+/* ========================================================================
+                                  PROJECTS:
+=========================================================================== */
+
+#projects {
+  height: 100%;
+}
+
+#background-projects {
+  height: 100%;
+  background-image: url("../images/background-projects.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#projects-title {
+  background-color: rgba(150, 150, 200, 0.75);
+  margin-top: 18px;
+  animation-duration: 1s;
+  animation-delay: 3.2s;
+}
+
+#projects-title h2 {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 41px;
+}
+
+#projects-top-row {
+  margin-top: 66px;
+  animation-duration: 3s;
+  animation-delay: 0.2s;
+}
+
+#projects-second-row {
+  margin-top: 5px;
+}
+
+#projects-second-row, #projects-third-row {
+  animation-duration: 2s;
+  animation-delay: 3.8s;
+}
+
+.proj-img :hover {
+  transform: scale(1.02);
+}
+
+.project-language {
+  background-color: rgba(150, 180, 200, 0.9);
+  font-family: 'Roboto', sans-serif;
+}
+
+.project-description {
+  background-color: rgba(150, 180, 200, 0.85);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+}
+
+#padding-description {
+  padding: 2px;
+}
+
+#back-to-top {
+  border-color: #fff;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 1px 10px;
+  display: none;
+}
+
+#back-to-top:hover, #back-to-top:focus {
+  border-color: blue;
+  color: blue;
+}
+
+#back-to-top h4 {
+  font-size: 24px;
+}
+
+/* Responsive (in progress) */
+@media screen and (max-height : 568px)
+and (max-width : 370px)
+and (-webkit-min-device-pixel-ratio: 2) {
+  #box4 {
+    margin-top: 50px;
+  }
+}
